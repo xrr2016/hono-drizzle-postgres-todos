@@ -10,9 +10,9 @@ import {
 } from "drizzle-orm/pg-core";
 
 const timestamps = {
-  deleted_at: timestamp({ withTimezone: true }),
-  updated_at: timestamp({ withTimezone: true }).defaultNow(),
-  created_at: timestamp({ withTimezone: true }).defaultNow().notNull(),
+  deletedAt: timestamp({ withTimezone: true }),
+  updatedAt: timestamp({ withTimezone: true }).defaultNow(),
+  createdAt: timestamp({ withTimezone: true }).defaultNow().notNull(),
 };
 
 export const usersTable = pgTable(
